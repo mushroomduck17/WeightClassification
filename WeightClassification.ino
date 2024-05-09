@@ -107,7 +107,7 @@ void loop() {
       if (final_value >= weight_point_min && final_value < weight_point_1  ) 
       {
         range1_count++;
-        if (range1_count=100)
+        if (range1_count==maxNumberPerRange)
         {
           flag=0;
         }
@@ -119,7 +119,7 @@ void loop() {
       if (final_value >= weight_point_1 && filtered_value < weight_point_2)
       {
          range2_count++;
-         if (range2_count=100)
+         if (range2_count==maxNumberPerRange)
          {
            flag=0;
          }
@@ -132,7 +132,7 @@ void loop() {
       if (final_value >=  weight_point_2)
       {
         range3_count++;
-        if (range3_count=100)
+        if (range3_count==maxNumberPerRange)
         {
           flag=0;
         }
