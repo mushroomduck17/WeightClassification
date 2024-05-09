@@ -69,15 +69,15 @@ void loop() {
     if (digitalRead(resume_pin)==1)
     {
       flag=1;
-      if ( range1_count ==100)
+      if ( range1_count ==maxNumberPerRange)
       {
         range1_count=0;
       }
-      if ( range2_count ==100)
+      if ( range2_count ==maxNumberPerRange)
       {
         range2_count=0;
       }
-      if ( range3_count ==100)
+      if ( range3_count ==maxNumberPerRange)
       {
         range3_count=0;
       }
